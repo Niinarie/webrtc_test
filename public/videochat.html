@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>WebRTC example</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class='video__container'>
+    <div class="video__wrapper">
+      <video id="localVideo" autoplay></video>
+      <video id="remoteVideo"></video>
+    </div>
+  </main>
+  <div class="buttons">
+    <button class="btn" type="button" id="btnMakeCall">Make Call</button>
+    <span id="error"></span>
+  </div>
+  <div class='buttons' id="btnActions">
+    <button class="btn btn--inline" id="btnAccept">ACCEPT CALL</button>
+    <button class="btn btn--inline btn--deny" id="btnDeny">DENY CALL</button>
+  </div>
+  <script src="modules/socket.io-client/dist/socket.io.js"></script>
+  <script src="js/rtc.js"></script>
+</body>
+
+</html>
